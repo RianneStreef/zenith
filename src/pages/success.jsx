@@ -3,10 +3,12 @@ import { Helmet } from "react-helmet";
 
 import "../styles/success.css";
 
+import Layout from "../components/Layout";
+
 import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
 
-const IndexPage = function (props) {
+const SuccessPage = function (props) {
   let { language, languageToUse } = props;
 
   language === "english"
@@ -30,4 +32,5 @@ const IndexPage = function (props) {
   );
 };
 
-export default IndexPage;
+SuccessPage.Layout = Layout;
+export default SuccessPage;
