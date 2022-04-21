@@ -17,6 +17,7 @@ const IndexPage = function (props) {
 
   console.log(language);
   console.log(languageToUse);
+
   return (
     <div>
       <Helmet>
