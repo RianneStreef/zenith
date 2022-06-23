@@ -1,7 +1,7 @@
 export const french = {
   language: "french",
 
-  indexTitle: "French title",
+  indexTitle: "Zenith Ski Shop",
   metaDescription: "French  description",
   metaKeywords: "French  keywords",
 
