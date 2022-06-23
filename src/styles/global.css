@@ -101,8 +101,8 @@ p {
 
 .book-link {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   z-index: 999;
   color: var(--color-text);
   background-color: var(--color-background);
