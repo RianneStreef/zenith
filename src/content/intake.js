@@ -1,5 +1,5 @@
 const intakeInfo = {
-  companyName: "Template",
+  companyName: "Zenith",
   companyAddress: "Template Street",
   domainName: "www.template.com",
   contactEmail: "",
