@@ -6,7 +6,7 @@ import "../styles/Services.css";
 
 import bootfittingIntroImage from "../images/bootfittingIntroImage.jpg";
 import modjoIntroImage from "../images/modjoIntroImage.jpg";
-import ripNWudIntroImage from "../images/modjoIntroImage.jpg";
+import ripNWudIntroImage from "../images/ripNWudIntroImage.jpg";
 
 const Services = (props) => {
   let { language, languageToUse } = props;
