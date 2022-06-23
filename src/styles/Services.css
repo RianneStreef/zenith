@@ -1,0 +1,25 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.usp-intro {
+  background-color: var(--color-background-light);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.usp-intro-image {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .services {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+}

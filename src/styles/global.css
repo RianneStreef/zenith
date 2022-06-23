@@ -3,14 +3,35 @@
   --color-shadow: #eaeaea;
   --color-text: #fff;
   --color-background: #000;
+  --color-background-light: rgb(59, 58, 58);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
 }
 
 html {
   font-size: calc(60% + 0.8vmin);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
 }
 
 * {
   font-size: 1rem;
+}
+
+body {
+  font-family: "Montserrat";
 }
 
 main {
@@ -20,20 +41,33 @@ main {
 
 h1 {
   font-size: 2.2rem;
+  font-family: "Roboto";
 }
 
 h2 {
   font-size: 1.6rem;
+  font-family: "Roboto";
 }
 
 h3 {
   font-size: 1.3rem;
+  font-family: "Roboto";
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
 }
 
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.hidden {
+  display: none;
 }
 
 .logo {
@@ -63,4 +97,20 @@ h3 {
 
 .header-placeholder {
   height: 80px;
+}
+
+.book-link {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  padding: 20px;
+  text-decoration: none;
+}
+
+.book-link:visited {
+  color: var(--color-text);
+  text-decoration: none;
 }

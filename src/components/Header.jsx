@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Burger from "../components/Burger";
 
-import logo from "../images/icon.png";
+import logoVertical from "../images/logo-vertical.png";
 
 import flagEn from "../images/icon-en.png";
 import flagFr from "../images/icon-fr.png";
@@ -26,18 +26,27 @@ const Header = (props) => {
   language === "dutch" ? (languageToUse = content.dutch) : null;
   return (
     <div className="header">
-      <div className="hidden-desktop">
-        <Burger
-          language={language}
-          setLanguage={setLanguage}
-          languageToUse={languageToUse}
-        />
-      </div>
+      <Link to="/" className="logo-link">
+        <img src={logoVertical} alt="Logo" className="header-logo" />
+      </Link>
       <ul className="links hidden-mobile">
         <li>
           <Link to="/" className="nav-link">
-            Welcome
+            Zenith Ski Shop
           </Link>
+          <Link to="/#bootfitting" className="nav-link">
+            {languageToUse.bootfitting}
+          </Link>
+          <Link to="/#services" className="nav-link">
+            {languageToUse.services}
+          </Link>
+          <a
+            href="https://zenith-skishop.notresphere.com/location-materiel"
+            target="blank"
+            className="nav-link"
+          >
+            {languageToUse.book}
+          </a>
         </li>
 
         <li>
@@ -84,9 +93,13 @@ const Header = (props) => {
           </div>
         </li>
       </ul>
-      <Link to="/" className="logo-link">
-        <img src={logo} alt="Logo" className="header-logo" />
-      </Link>
+      <div className="hidden-desktop">
+        <Burger
+          language={language}
+          setLanguage={setLanguage}
+          languageToUse={languageToUse}
+        />
+      </div>
     </div>
   );
 };

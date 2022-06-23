@@ -5,6 +5,12 @@ export const english = {
   metaDescription: "English description",
   metaKeywords: "English keywords",
 
+  bootfitting: "Bootfitting",
+  services: "Services",
+  book: "Reserver",
+
+  underTitle: "Bootfitter de père en fils depuis 1985",
+
   contact: "Contact",
   contactIntro: "Contact intro",
   name: "Name",

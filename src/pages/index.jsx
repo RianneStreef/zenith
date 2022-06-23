@@ -7,14 +7,17 @@ import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
 
 import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import Intro from "../components/Intro";
+import Services from "../components/Services";
+import Contact from "../components/Contact";
 
 const IndexPage = function (props) {
   let { language, languageToUse } = props;
 
   language === "english" ? (languageToUse = content.english) : null;
-  language === "dutch"
-    ? (languageToUse = content.dutch)
-    : (languageToUse = content.french);
+  language === "french" ? (languageToUse = content.french) : null;
+  language === "dutch" ? (languageToUse = content.dutch) : null;
 
   console.log(language);
   console.log(languageToUse);
@@ -29,6 +32,17 @@ const IndexPage = function (props) {
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
       <div className="header-placeholder" />
+      <Hero language={language} languageToUse={languageToUse} />
+      <Intro language={language} languageToUse={languageToUse} />
+      <Services language={language} languageToUse={languageToUse} />
+      <Contact language={language} languageToUse={languageToUse} />
+      <a
+        href="https://zenith-skishop.notresphere.com/location-materiel"
+        target="blank"
+        className="book-link"
+      >
+        {languageToUse.book}
+      </a>
     </div>
   );
 };

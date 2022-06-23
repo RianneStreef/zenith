@@ -5,6 +5,12 @@ export const dutch = {
   metaDescription: "Dutch description",
   metaKeywords: "Dutch keywords",
 
+  bootfitting: "Bootfitting",
+  services: "Services",
+  book: "Reserver",
+
+  underTitle: "Bootfitter de père en fils depuis 1985",
+
   contact: "Contact",
   contactIntro: "Contact intro",
   name: "Naam",

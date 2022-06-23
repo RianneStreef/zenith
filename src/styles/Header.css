@@ -1,7 +1,7 @@
 .header {
   position: fixed;
-  background-color: var(--color-background-light);
-  width: 100vw;
+  background-color: var(--color-background);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .header-logo {
-  width: 30%;
+  width: 100%;
   margin: 20px;
 }
 
@@ -29,6 +29,7 @@
 
 .logo-link {
   text-align: right;
+  width: 130px;
 }
 
 .nav-link:hover {
@@ -53,5 +54,8 @@
   }
   .hidden-desktop {
     display: none;
+  }
+  .set-language {
+    margin-right: 40px;
   }
 }

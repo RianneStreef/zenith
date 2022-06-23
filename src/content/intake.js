@@ -4,7 +4,7 @@ const intakeInfo = {
   domainName: "www.template.com",
   contactEmail: "",
 
-  siteName: "Template site",
+  siteName: "Zenith Ski Shop",
   highlightColor: "#ff00ff",
 
   taxNumber: "1313",

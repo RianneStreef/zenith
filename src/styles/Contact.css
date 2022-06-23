@@ -1,0 +1,20 @@
+.contact {
+  background-color: var(--color-background-light);
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 90%;
+  margin: auto;
+  background-color: var(--color-background-light);
+  border: none;
+  border-bottom: 1px solid var(--color-text);
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    margin: 20px;
+  }
+}

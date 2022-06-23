@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import flagEn from "../images/icon-en.png";
 import flagFr from "../images/icon-fr.png";
+import flagNl from "../images/icon-nl.png";
 
 import { content } from "../content/languages";
 
@@ -59,9 +60,9 @@ const Navbar = (props) => {
 
   let { language, setLanguage, languageToUse } = props;
 
-  language === "english"
-    ? (languageToUse = content.english)
-    : (languageToUse = content.french);
+  language === "english" ? (languageToUse = content.english) : null;
+  language === "french" ? (languageToUse = content.french) : null;
+  language === "dutch" ? (languageToUse = content.dutch) : null;
 
   function handleSetLanguage(language) {
     setLanguage(language);
@@ -73,8 +74,30 @@ const Navbar = (props) => {
       <Ul open={open}>
         <li>
           <Link to="/" className="nav-link" onClick={() => setOpen(!open)}>
-            Welcome
+            Zenith Ski Shop
           </Link>
+          <Link
+            to="/#bootfitting"
+            className="nav-link"
+            onClick={() => setOpen(!open)}
+          >
+            {languageToUse.bootfitting}
+          </Link>
+          <Link
+            to="/#services"
+            className="nav-link"
+            onClick={() => setOpen(!open)}
+          >
+            {languageToUse.services}
+          </Link>
+          <a
+            href="https://zenith-skishop.notresphere.com/location-materiel"
+            target="blank"
+            className="nav-link"
+            onClick={() => setOpen(!open)}
+          >
+            {languageToUse.book}
+          </a>
         </li>
 
         <li className="social-links-header">
@@ -91,6 +114,13 @@ const Navbar = (props) => {
               onClick={() => handleSetLanguage("french")}
               className={`flag ${
                 languageToUse.language === "french" ? "opaque" : "fade"
+              } `}
+            />
+            <img
+              src={flagNl}
+              onClick={() => handleSetLanguage("dutch")}
+              className={`flag ${
+                languageToUse.language === "dutch" ? "opaque" : "fade"
               } `}
             />
           </div>
